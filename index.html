@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <body>
+      <h1>Javascript Calculator</h1>
+      <div id="calculator">
+        <form>
+          <input type="text" id="display" disabled>
+          <br>
+          <input type="button" value="C" id="keys" onclick="addtoscreen('c')">
+          <input type="button" value="CE" id="keys" onclick="backspace()">
+          <input type="button" value="x2" id="keys" onclick="power()">
+          <input type="button" value="+" id="keys" onclick="addtoscreen('+')">
+          <br>
+          <input type="button" value="9" id="keys" onclick="addtoscreen('9')">
+          <input type="button" value="8" id="keys" onclick="addtoscreen('8')">
+          <input type="button" value="7" id="keys" onclick="addtoscreen('7')">
+          <input type="button" value="-" id="keys" onclick="addtoscreen('-')">
+          <br>
+          <input type="button" value="6" id="keys" onclick="addtoscreen('6')">
+          <input type="button" value="5" id="keys" onclick="addtoscreen('5')">
+          <input type="button" value="4" id="keys" onclick="addtoscreen('4')">
+          <input type="button" value="*" id="keys" onclick="addtoscreen('*')">
+          <br>
+          <input type="button" value="3" id="keys" onclick="addtoscreen('3')">
+          <input type="button" value="2" id="keys" onclick="addtoscreen('2')">
+          <input type="button" value="1" id="keys" onclick="addtoscreen('1')">
+          <input type="button" value="/" id="keys" onclick="addtoscreen('/')">
+          <br>
+          <input type="button" value="0" id="keys" onclick="addtoscreen('0')">
+          <input type="button" value="." id="keys" onclick="addtoscreen('.')">
+          <input type="button" value="=" id="equal" onclick="answer()">
+        </form>
+        <h3>JS calculator</h3>
+      </div>
+    </body>
+    
+    <script src="script.js" async defer></script>
+  </body>
+</html>
